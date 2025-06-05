@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>form</title>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Registration Form</h1>
+    </header>
+    <form action=" ">
+        <div class="name flex">
+             <label for="name">Enter the Name :</label>
+            <input type="text" name = "name" placeholder="Enter the name " required>
+        </div>
+
+        <div class="email flex">
+            <label for="phone">Enter the Email :</label>
+            <input type="text" name = "email" placeholder="Enter Email " required>
+        </div>
+
+        <div class="password flex">
+            <label for="pass">Enter the Email :</label>
+            <input type="password" name = "pass" placeholder="Enter Password ">
+        </div>
+
+        <div class="country flex">
+            <label for="Country">Select country</label>
+            <select name="country" id="country">
+                <option value="Country">Country</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="Russia">Russia</option>
+            </select>
+        </div>
+
+       <div class="gender-box flex">
+            <Label>Gender</Label>
+                <input type="radio" name = "Gender" value = "Male" id = "G">Male
+                <input type="radio" name = "Gender" value = "Female" id = "G">Female
+       </div>
+
+
+        <center><button type="submit"><a href = "end.html">Sign Up</a></button></center>
+    </form>
+</div>
+</body>
+</html>
