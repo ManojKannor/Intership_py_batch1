@@ -1,0 +1,59 @@
+@media (max-width: 1300px) {
+    .left{
+        
+        /* width: 100vw; */
+        display:none;
+        position: absolute;
+        z-index: 1;
+        background-color: black;
+        width: 370px;
+    }
+
+    .right{
+        width: 100vw;
+        margin: 0; 
+        padding: 0;
+    }
+
+    .icon-con .bar i{
+        display: block;
+    }
+
+    .songList, .songList ul , .songList ul .song{
+        /* width: 100vh; */
+    }
+
+  }
+
+
+  @media (max-width: 600px) {
+    .playSystem{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+
+
+  @media (max-width: 483px) {
+   .card{
+    width: 100vh;
+    margin-bottom: 147px;
+    /* text-align: center; */
+    font-size: 26px;
+   }
+
+   .card-img img{
+    width: 312px;
+    height: 312px;
+   }
+
+   .container{
+    margin: 0;
+   }
+
+   .playbar{
+    bottom: -32px;
+   }
+
+  }

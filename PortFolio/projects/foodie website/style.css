@@ -1,0 +1,88 @@
+*{
+    font-family: calibri;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 65px;
+    background-color: white;
+    color: black;
+    padding: 0 2.5rem;
+}
+
+.logo{
+    font-size: 1rem;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    list-style : none;
+    color: black;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size : 0.9rem;
+    font-weight: bold;
+}
+
+.select{
+    border-bottom: 2px solid skyblue;
+    border-radius: 1px;
+    padding-bottom : 0.2rem;
+}
+
+.buy-logo i{
+    padding-right : 0.5rem;
+}
+
+section{
+    background-image: url('orange.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap : 1.6rem;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+section h1{
+    font-size: 3rem;
+    color: white;
+}
+
+section h3{
+    font-size: 0.9rem;
+    color: white;
+}
+
+section button{
+    background-color: black;
+    color : white;
+    font-size: 0.8rem;
+    padding: 0.6rem 3.5rem;
+    border : none; 
+    border-radius: 5px;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+section button:hover{
+    background-color: skyblue;
+    color: white;
+}

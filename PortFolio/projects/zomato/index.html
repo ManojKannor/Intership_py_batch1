@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Zomato</title>
+    <style>
+        .food-container{
+            padding : 0.8rem 130px 0 130px;
+            background-color: #f8f8f8;
+        }
+
+        .food-container .h{
+            font-size: 2rem;
+            height: 65px;
+            padding: 0.5rem 0 4rem 0;
+        }
+
+        .food-container .s-h{
+            font-size: 1.1rem;
+            margin: 0 0 0.8rem 0;
+            color: #363636;
+            font-weight: 100px;
+        }
+        .scroll-container {
+            width: 100%;
+            overflow-x: scroll;
+            white-space: nowrap; /* Keeps all content on a single line */
+            position: relative;
+        }
+        .scroll-item {
+            display: inline-block;
+            width: 260px; /* Set width for each item */
+            height: 320px; /* Set height for each item */
+            background-color: #f0f0f0;
+            margin-right: 10px; /* Add margin between items */
+        }
+
+        .scroll-item:hover{
+            margin: 2rem 2rem;
+            transition : all 0.4s;
+            transform: scale(1.1);
+        }
+
+        .scroll-item img{
+            width: 250px;
+            height: 320px;
+            border: none;
+            border-radius: 7px;
+        }
+
+        .scroll-item p{
+            position: relative;
+            bottom: 51px;
+             left: 16px;
+            color: white;
+        }
+
+        .scroll-item .place{
+            font-size: 0.9rem;
+            margin-top: 0.3rem;
+        }
+
+        .scroll-container::-webkit-scrollbar{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container-h1">
+            <div class="logo">
+                <img src="logo.png" alt="image not found">
+            </div>
+          <div class="navbar">
+            <div class="search">
+                <select name="location" id="location">
+                    <option class="option" value="loc">Nashik</option>
+                    <option class="option" value="loc1">Shramnagar-2, Upnagar</option>
+                    <option class="option" value="loc2">datta mandir, nashik road</option>
+                    <option class="option" value="loc3">Ashok nagar, Satpur</option>
+                    <option class="option" value="loc4">Bhujbal knowledge city, Adgoan</option>
+                    <option class="option" value="loc5">shivaji Maharaj nagar, Jailroad</option>
+                </select>
+                <div class="d-line"></div>
+                <div class="s-logo">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <input type="search" name="item-food" placeholder="Search for restaurant cousin for a dish" id="item-food">
+            </div>
+            <div class="signUp">
+                <button type="submit">Log in</button>
+                <button type="submit">Sign up</button>
+            </div>
+            <button class="ModeBtn">Change Mode</button>
+          </div>
+        </div>
+        <div class="container-h2">
+            <div class="item-1 items">
+                <div class="h2-img1 img">
+                    <img alt="illustration" src="https://b.zmtcdn.com/data/o2_assets/30fa0a844f3ba82073e5f78c65c18b371616149662.png?output-format=webp" loading="lazy" class="sc-s1isp7-5 jQwYOW">
+                </div>
+                <p>Dining Out</p>
+            </div>
+            <div class="item-2 items">
+                <div class="h2-img2 img">
+                    <img alt="illustration" src="https://b.zmtcdn.com/data/o2_assets/246bbd71fbba420d5996452be3024d351616150055.png?output-format=webp" loading="lazy" class="sc-s1isp7-5 jQwYOW">
+                </div>
+                <p>Delivery</p>
+            </div>
+            <div class="item-3 items">
+                <div class="h2-img2 img">
+                    <img alt="illustration" src="https://b.zmtcdn.com/data/o2_assets/01040767e4943c398e38e3592bb1ba8a1616150142.png?output-format=webp" loading="lazy" class="sc-s1isp7-5 jQwYOW">
+                </div>
+                <p>Nightlife</p>
+            </div>
+        </div>
+    </header> 
+    
+    <div class="food-container">
+        <p class="h">Collections</p>
+        <p class="s-h">Explore curated lists of top restaurants, cafes, pubs, and bars in Nashik, based on trends</p>
+        <div class="scroll-container" id="scrollContainer">
+            <div class="scroll-item">
+                <img src="res-img.jpg" alt="">
+                <p>12 Live Cricket Screening </p>
+                <p class="place">12 places</p>
+            </div>
+            <div class="scroll-item">
+                <img src="res-img2.jpg" alt="">
+                <p>6 Best Luxury Dining places </p>
+                <p class="place">7 places</p>
+            </div>
+            <div class="scroll-item">
+                <img src="res-img3.jpg" alt="">
+                <p>5 Pan-Asian Restaurant </p>
+                <p class="place">5 places</p>
+            </div>
+            <div class="scroll-item">
+                <img src="res-img4.jpg" alt="">
+                <p>9 Great Cafes </p>
+                <p class="place">10 places</p>
+            </div>
+            <div class="scroll-item">
+                <img src="res-img.jpg" alt="">
+                <p>12 Live Cricket Screening </p>
+                <p class="place">12 places</p>
+            </div>
+            <div class="scroll-item">
+                <img src="res-img2.jpg" alt="">
+                <p>12 Live Cricket Screening </p>
+                <p class="place">12 places</p>
+            </div>
+            <div class="scroll-item">
+                <img src="res-img3.jpg" alt="">
+                <p>12 Live Cricket Screening </p>
+                <p class="place">12 places</p>
+            </div>
+            <div class="scroll-item">
+                <img src="res-img4.jpg" alt="">
+                <p>12 Live Cricket Screening </p>
+                <p class="place">12 places</p>
+            </div>
+            <div class="scroll-item">
+                <img src="res-img2.jpg" alt="">
+                <p>12 Live Cricket Screening </p>
+                <p class="place">12 places</p>
+            </div>
+            <div class="scroll-item">
+                <img src="res-img3.jpg" alt="">
+                <p>12 Live Cricket Screening </p>
+                <p class="place">12 places</p>
+            </div>
+        </div>
+
+        <div class="filter">
+            <div class="item">
+                <i class="fa-solid fa-filter"></i>    Filter
+            </div>
+            <div class="item flex">
+                <img src="https://b.zmtcdn.com/data/o2_assets/577bf55ff265ae45e11cfe6911d176941687789024.png" alt="Gold Icon" width="18px" height="18px" style="display: flex; align-items: center; justify-content: center;"> Gold
+            </div>
+            <div class="item">Rating: 4.0+</div>
+            <div class="item">Outdoor Seating</div>
+            <div class="item">Serves Alcohol</div>
+            <div class="item">Open Now</div>
+        </div>
+
+        <div class="big">
+            <img alt="" src="https://b.zmtcdn.com/data/o2_assets/da94405b04f6ae6bf64a4e2a01b1b5c11686563732.png" loading="auto" class="sc-s1isp7-5 fyZwWD">
+        </div>
+
+        <div class="trend">
+            Trending dining restaurants in Nashik
+        </div>
+
+        <div class="trend-section">
+            <div class="t-item">
+                <img src="trend1.jpg" alt="">
+                <div class="flex">
+                    <p class="t-h">
+                        the Smoked Vine - Radisson
+                    </p>
+                    <div class="rate">4.8
+                        <i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="flex">
+                    <p class="h3">
+                        North Indian, Fast Food,B...
+                    </p>
+                    <p class="h3">₹800 for two</p>
+                </div>
+                <div class="flex">
+                    <p class="h4">
+                        Pathardi Phata,
+                    </p>
+                    <p class="h4">6.5 km</p>
+                </div>
+            </div>
+            <div class="t-item">
+                <img src="trend2.jpg" alt="">
+                <div class="flex">
+                    <p class="t-h">
+                        Asian Wok And Grill
+                    </p>
+                    <div class="rate">4.8
+                        <i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="flex">
+                    <p class="h3">
+                        Asian, Chinese, Seafood, ...
+                    </p>
+                    <p class="h3">₹850 for two</p>
+                </div>
+                <div class="flex">
+                    <p class="h4">
+                        Anand Wali Goan, Nashik 
+                    </p>
+                    <p class="h4">3.2 km</p>
+                </div>
+            </div>
+
+            <div class="t-item">
+                <img src="trend3.jpg" alt="">
+                <div class="flex">
+                    <p class="t-h">
+                        Tamara
+                    </p>
+                    <div class="rate">4.0
+                        <i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="flex">
+                    <p class="h3">
+                        Chinese, Fast Food, Pizza,...
+                    </p>
+                    <p class="h3">₹1000 for two</p>
+                </div>
+                <div class="flex">
+                    <p class="h4">
+                        College Road, Nashik 
+                    </p>
+                    <p class="h4">3.1 km</p>
+                </div>
+            </div>
+
+            <div class="t-item">
+                <img src="trend1.jpg" alt="">
+                <div class="flex">
+                    <p class="t-h">
+                        the Smoked Vine - Radisson
+                    </p>
+                    <div class="rate">4.8
+                        <i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="flex">
+                    <p class="h3">
+                        North Indian, Fast Food,B...
+                    </p>
+                    <p class="h3">₹800 for two</p>
+                </div>
+                <div class="flex">
+                    <p class="h4">
+                        Pathardi Phata,
+                    </p>
+                    <p class="h4">6.5 km</p>
+                </div>
+            </div>
+            <div class="t-item">
+                <img src="trend2.jpg" alt="">
+                <div class="flex">
+                    <p class="t-h">
+                        Asian Wok And Grill
+                    </p>
+                    <div class="rate">4.8
+                        <i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="flex">
+                    <p class="h3">
+                        Asian, Chinese, Seafood, ...
+                    </p>
+                    <p class="h3">₹850 for two</p>
+                </div>
+                <div class="flex">
+                    <p class="h4">
+                        Anand Wali Goan, Nashik 
+                    </p>
+                    <p class="h4">3.2 km</p>
+                </div>
+            </div>
+
+            <div class="t-item">
+                <img src="trend3.jpg" alt="">
+                <div class="flex">
+                    <p class="t-h">
+                        Tamara
+                    </p>
+                    <div class="rate">4.0
+                        <i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="flex">
+                    <p class="h3">
+                        Chinese, Fast Food, Pizza,...
+                    </p>
+                    <p class="h3">₹1000 for two</p>
+                </div>
+                <div class="flex">
+                    <p class="h4">
+                        College Road, Nashik 
+                    </p>
+                    <p class="h4">3.1 km</p>
+                </div>
+            </div>
+            <div class="t-item">
+                <img src="trend1.jpg" alt="">
+                <div class="flex">
+                    <p class="t-h">
+                        the Smoked Vine - Radisson
+                    </p>
+                    <div class="rate">4.8
+                        <i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="flex">
+                    <p class="h3">
+                        North Indian, Fast Food,B...
+                    </p>
+                    <p class="h3">₹800 for two</p>
+                </div>
+                <div class="flex">
+                    <p class="h4">
+                        Pathardi Phata,
+                    </p>
+                    <p class="h4">6.5 km</p>
+                </div>
+            </div>
+            <div class="t-item">
+                <img src="trend2.jpg" alt="">
+                <div class="flex">
+                    <p class="t-h">
+                        Asian Wok And Grill
+                    </p>
+                    <div class="rate">4.8
+                        <i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="flex">
+                    <p class="h3">
+                        Asian, Chinese, Seafood, ...
+                    </p>
+                    <p class="h3">₹850 for two</p>
+                </div>
+                <div class="flex">
+                    <p class="h4">
+                        Anand Wali Goan, Nashik 
+                    </p>
+                    <p class="h4">3.2 km</p>
+                </div>
+            </div>
+
+            <div class="t-item">
+                <img src="trend3.jpg" alt="">
+                <div class="flex">
+                    <p class="t-h">
+                        Tamara
+                    </p>
+                    <div class="rate">4.0
+                        <i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="flex">
+                    <p class="h3">
+                        Chinese, Fast Food, Pizza,...
+                    </p>
+                    <p class="h3">₹1000 for two</p>
+                </div>
+                <div class="flex">
+                    <p class="h4">
+                        College Road, Nashik 
+                    </p>
+                    <p class="h4">3.1 km</p>
+                </div>
+            </div>
+            <div class="t-item">
+                <img src="trend1.jpg" alt="">
+                <div class="flex">
+                    <p class="t-h">
+                        the Smoked Vine - Radisson
+                    </p>
+                    <div class="rate">4.8
+                        <i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="flex">
+                    <p class="h3">
+                        North Indian, Fast Food,B...
+                    </p>
+                    <p class="h3">₹800 for two</p>
+                </div>
+                <div class="flex">
+                    <p class="h4">
+                        Pathardi Phata,
+                    </p>
+                    <p class="h4">6.5 km</p>
+                </div>
+            </div>
+            <div class="t-item">
+                <img src="trend2.jpg" alt="">
+                <div class="flex">
+                    <p class="t-h">
+                        Asian Wok And Grill
+                    </p>
+                    <div class="rate">4.8
+                        <i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="flex">
+                    <p class="h3">
+                        Asian, Chinese, Seafood, ...
+                    </p>
+                    <p class="h3">₹850 for two</p>
+                </div>
+                <div class="flex">
+                    <p class="h4">
+                        Anand Wali Goan, Nashik 
+                    </p>
+                    <p class="h4">3.2 km</p>
+                </div>
+            </div>
+
+            <div class="t-item">
+                <img src="trend3.jpg" alt="">
+                <div class="flex">
+                    <p class="t-h">
+                        Tamara
+                    </p>
+                    <div class="rate">4.0
+                        <i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="flex">
+                    <p class="h3">
+                        Chinese, Fast Food, Pizza,...
+                    </p>
+                    <p class="h3">₹1000 for two</p>
+                </div>
+                <div class="flex">
+                    <p class="h4">
+                        College Road, Nashik 
+                    </p>
+                    <p class="h4">3.1 km</p>
+                </div>
+            </div>
+            <div class="t-item">
+                <img src="trend1.jpg" alt="">
+                <div class="flex">
+                    <p class="t-h">
+                        the Smoked Vine - Radisson
+                    </p>
+                    <div class="rate">4.8
+                        <i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="flex">
+                    <p class="h3">
+                        North Indian, Fast Food,B...
+                    </p>
+                    <p class="h3">₹800 for two</p>
+                </div>
+                <div class="flex">
+                    <p class="h4">
+                        Pathardi Phata,
+                    </p>
+                    <p class="h4">6.5 km</p>
+                </div>
+            </div>
+            <div class="t-item">
+                <img src="trend2.jpg" alt="">
+                <div class="flex">
+                    <p class="t-h">
+                        Asian Wok And Grill
+                    </p>
+                    <div class="rate">4.8
+                        <i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="flex">
+                    <p class="h3">
+                        Asian, Chinese, Seafood, ...
+                    </p>
+                    <p class="h3">₹850 for two</p>
+                </div>
+                <div class="flex">
+                    <p class="h4">
+                        Anand Wali Goan, Nashik 
+                    </p>
+                    <p class="h4">3.2 km</p>
+                </div>
+            </div>
+
+            <div class="t-item">
+                <img src="trend3.jpg" alt="">
+                <div class="flex">
+                    <p class="t-h">
+                        Tamara
+                    </p>
+                    <div class="rate">4.0
+                        <i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="flex">
+                    <p class="h3">
+                        Chinese, Fast Food, Pizza,...
+                    </p>
+                    <p class="h3">₹1000 for two</p>
+                </div>
+                <div class="flex">
+                    <p class="h4">
+                        College Road, Nashik 
+                    </p>
+                    <p class="h4">3.1 km</p>
+                </div>
+            </div>
+        </div>
+        <p class="h">Collections</p>
+        <p class="s-h">Explore curated lists of top restaurants, cafes, pubs, and bars in Nashik, based on trends</p>
+        <div class="scroll-container" id="scrollContainer">
+            <div class="scroll-item">
+                <img src="res-img.jpg" alt="">
+                <p>12 Live Cricket Screening </p>
+                <p class="place">12 places</p>
+            </div>
+            <div class="scroll-item">
+                <img src="res-img2.jpg" alt="">
+                <p>6 Best Luxury Dining places </p>
+                <p class="place">7 places</p>
+            </div>
+            <div class="scroll-item">
+                <img src="res-img3.jpg" alt="">
+                <p>5 Pan-Asian Restaurant </p>
+                <p class="place">5 places</p>
+            </div>
+            <div class="scroll-item">
+                <img src="res-img4.jpg" alt="">
+                <p>9 Great Cafes </p>
+                <p class="place">10 places</p>
+            </div>
+            <div class="scroll-item">
+                <img src="res-img.jpg" alt="">
+                <p>12 Live Cricket Screening </p>
+                <p class="place">12 places</p>
+            </div>
+            <div class="scroll-item">
+                <img src="res-img2.jpg" alt="">
+                <p>12 Live Cricket Screening </p>
+                <p class="place">12 places</p>
+            </div>
+            <div class="scroll-item">
+                <img src="res-img3.jpg" alt="">
+                <p>12 Live Cricket Screening </p>
+                <p class="place">12 places</p>
+            </div>
+            <div class="scroll-item">
+                <img src="res-img4.jpg" alt="">
+                <p>12 Live Cricket Screening </p>
+                <p class="place">12 places</p>
+            </div>
+            <div class="scroll-item">
+                <img src="res-img2.jpg" alt="">
+                <p>12 Live Cricket Screening </p>
+                <p class="place">12 places</p>
+            </div>
+            <div class="scroll-item">
+                <img src="res-img3.jpg" alt="">
+                <p>12 Live Cricket Screening </p>
+                <p class="place">12 places</p>
+            </div>
+        </div>
+    
+
+    <div class="popular-sec">
+        <p class="lightblack">Popular localities in and around <span class="black">Nashik</span></p>
+        <div class="sub-sec">
+            <div class="p-item">
+                <p class="p-h1">
+                   College Road 
+                </p>
+                <span>460 places</span>
+            </div>
+            <div class="p-item">
+                <p class="p-h1">
+                    Satpur
+                 </p>
+                 <span>156 places</span>
+            </div>
+            <div class="p-item">
+                <p class="p-h1">
+                    Parijat Nagar
+                 </p>
+                 <span>106 places</span>
+            </div>
+            <div class="p-item">
+                <p class="p-h1">
+                   Panchavati 
+                 </p>
+                 <span>291 places</span>
+            </div>
+            <div class="p-item">
+                <p class="p-h1">
+                    Pathardi Phata  
+                 </p>
+                 <span>172 places</span>
+            </div>
+            <div class="p-item">
+                <p class="p-h1">
+                    Anand Wali Goan 
+                 </p>
+                 <span>48 places</span>
+            </div>
+            <div class="p-item">
+                <p class="p-h1">
+                    Sharanpur 
+                 </p>
+                 <span>77 places</span>
+            </div>
+            <div class="p-item">
+                <p class="p-h1">
+                    Veer Sawarkar Nagar  
+                 </p>
+                 <span>49 places</span>
+            </div>
+            <div class="p-item">
+                <p class="p-h1">
+                    Patil Nagar  
+                 </p>
+                 <span>32 places</span>
+            </div>
+        </div>
+    </div>
+
+    <!--  drop down information section  -->
+     <p class="lightblack">
+        Explore Option Near Me 
+     </p>
+    <details>
+        <summary>Popular cuisines near me</summary>
+        <p>Bakery food near meBeverages food near meBiryani food near meBurger food near meChinese food near meDesserts food near meIce Cream food near meKebab food near meMaharashtrian food near meMomos food near meMughlai food near meNorth Indian food near mePizza food near meRolls food near meSandwich food near meSeafood food near meShake food near meSichuan food near meSouth Indian food near meStreet food near me</p>
+    </details>
+
+    <details>
+        <summary>Popular restaurant types near me</summary>
+        <p>Bakeries near meBars near meBeverage Shops near meBhojanalya near meCafés near meCasual Dining near meCocktail Bars near meDessert Parlors near meDhabas near meFine Dining near meFood Courts near meFood Trucks near meKiosks near meLounges near meMicrobreweries near mePaan Shop near meQuick Bites near meSweet Shops near me</p>
+    </details>
+
+    <details>
+        <summary>Cities We Deliver To</summary>
+        <p>Bakery food near meBeverages food near meBiryani food near meBurger food near meChinese food near meDesserts food near meIce Cream food near meKebab food near meMaharashtrian food near meMomos food near meMughlai food near meNorth Indian food near mePizza food near meRolls food near meSandwich food near meSeafood food near meShake food near meSichuan food near meSouth Indian food near meStreet food near me</p>
+    </details>
+
+    <!-- Footer Section  -->
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&amp;crop=198:42;*,*" width="132px" height="28" alt="Zomato logo" class="sc-elhb8j-1 ixsoFB">
+            </div>
+            <div class="col">
+                <div class="contury flex-all">
+                    <div class="india flex-all">
+                        <img src="india.png" alt="" width="22px" height="15px">
+                        <p>india</p>
+                    </div>
+                    <div class="lan flex-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="18" height="18" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 iwHbVQ"><title>language-globe</title><path d="M10 0c-5.523 0-10 4.477-10 10s4.477 10 10 10c5.523 0 10-4.477 10-10v0c-0.011-5.518-4.482-9.989-9.999-10h-0.001zM17.14 6.18h-3c-0.264-1.393-0.63-2.62-1.107-3.791l0.047 0.131c1.755 0.733 3.161 2.010 4.039 3.618l0.021 0.042zM18.1 10c-0.002 0.676-0.090 1.33-0.252 1.954l0.012-0.054h-3.44c0.059-0.57 0.092-1.231 0.092-1.9s-0.034-1.33-0.099-1.982l0.007 0.082h3.44c0.15 0.57 0.238 1.224 0.24 1.899v0.001zM1.9 10c0.002-0.676 0.090-1.33 0.252-1.954l-0.012 0.054h3.46c-0.059 0.57-0.092 1.231-0.092 1.9s0.034 1.33 0.099 1.982l-0.007-0.082h-3.46c-0.15-0.57-0.238-1.224-0.24-1.899v-0.001zM7.48 8.1h5.040c0.063 0.57 0.099 1.231 0.099 1.9s-0.036 1.33-0.107 1.981l0.007-0.081h-5.040c-0.063-0.57-0.099-1.231-0.099-1.9s0.036-1.33 0.107-1.981l-0.007 0.081zM10.76 1.9c0.603 1.228 1.106 2.657 1.436 4.152l0.024 0.128h-4.44c0.354-1.623 0.857-3.052 1.51-4.395l-0.050 0.115c0.24 0 0.5 0 0.76 0s0.48 0 0.76 0zM6.96 2.48c-0.445 1.051-0.825 2.291-1.079 3.576l-0.021 0.124h-3c0.899-1.65 2.305-2.927 4.007-3.64l0.053-0.020zM2.86 13.8h3c0.262 1.4 0.629 2.634 1.107 3.811l-0.047-0.131c-1.757-0.738-3.165-2.022-4.039-3.637l-0.021-0.043zM9.24 18.1c-0.605-1.234-1.108-2.67-1.437-4.172l-0.023-0.128h4.44c-0.352 1.63-0.855 3.066-1.51 4.415l0.050-0.115c-0.24 0-0.5 0-0.76 0s-0.48 0-0.76 0zM13.040 17.52c0.431-1.046 0.798-2.28 1.041-3.558l0.019-0.122h3.040c-0.902 1.642-2.308 2.912-4.006 3.62l-0.054 0.020z"></path></svg>
+                        <p>English</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-f-2">
+            <div class="col">
+                <p>ABOUT ZOMATO</p>
+                <ul>
+                    <li><a href="">Who We Are</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Work With Us</a></li>
+                    <li><a href="">Investor Relations</a></li>
+                    <li><a href="">Report Fraud</a></li>
+                    <li><a href="">Press Kit</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <p>ZOMAVERSE </p>
+                <ul>
+                    <li><a href="">Zomato </a></li>
+                    <li><a href="">Blinkit</a></li>
+                    <li><a href="">Feeding India </a></li>
+                    <li><a href="">Hyperpure</a></li>
+                    <li><a href="">Zomaland</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <p>FOR RESTAURANTS</p>
+                <ul>
+                    <li><a href="">Partner With Us</a></li>
+                    <li><a href="">Apps For You</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <p>LEARN MORE</p>
+                <ul>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Security</a></li>
+                    <li><a href="">Terms</a></li>
+                    <li><a href="">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="col col-img">
+                <p>SOCIAL LINKS</p>
+                <div class="s-app">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <img alt="image" src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" width="137px" height="40px" loading="lazy" class="sc-s1isp7-5 fyZwWD">
+                <br>
+                <img alt="image" src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" width="137px" height="40px" loading="lazy" class="sc-s1isp7-5 fyZwWD">
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

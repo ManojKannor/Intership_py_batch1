@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="fevicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="mediaQuery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+
+<body>
+    <div class="container flex">
+        <div class="left WH">
+            <div class="home mBlack border flex">
+                <ul>
+                    <li><a href=""> <img class="invert" src="logo.svg" alt="spotify" class="logo"></a></li>
+                    <li><a href=""> <img class="invert iconH" src="home.svg" alt="home">Home</a></li>
+                    <li><a href=""> <img class="invert iconH" src="search.svg" alt="spotify">Search</a></li>
+                </ul>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="library mBlack border">
+                <div class="playlistLibrary">
+                    <div class="playheader flex">
+                        <img class="invert iconH" src="library.svg" alt="">
+                        Your Library
+                    </div>
+
+                    <!-- Creating song list  -->
+
+                    <div class="songList">
+                        <ul>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <footer>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/" id="" data-encore-id="textLink" class="a">
+                            <span data-encore-id="type">Legal</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="a" href="https://www.spotify.com/in-en/safetyandprivacy/" id=""
+                            data-encore-id="textLink">
+                            <span data-encore-id="type">Safety &amp; Privacy Center</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="a" href="https://www.spotify.com/in-en/legal/privacy-policy/" id=""
+                            data-encore-id="textLink">
+                            <span data-encore-id="type">Privacy Policy</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="a" href="https://www.spotify.com/in-en/legal/cookies-policy/" id=""
+                            data-encore-id="textLink">
+                            <span data-encore-id="type">Cookies</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="a" href="https://www.spotify.com/in-en/legal/privacy-policy/#s3" id=""
+                            data-encore-id="textLink">
+                            <span data-encore-id="type">About Ads</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="a" href="https://www.spotify.com/in-en/accessibility/" id=""
+                            data-encore-id="textLink">
+                            <span data-encore-id="type">Accessibility</span>
+                        </a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div class="right sBlack WH border">
+            <div class="header mBlack">
+                <div class="icon-con">
+                    <div class="bar">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <div class="icon">
+                        <svg class="round" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="34" height="34"
+                            color="#ccc" fill="none">
+                            <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg class="round" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="34" height="34"
+                            color="#ccc" fill="none">
+                            <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="btn-sec">
+                    <button class="signBtn">Sign up</button>
+                    <button class="loginBtn">Log In</button>
+                </div>
+            </div>
+
+            <div class="playList sBlack">
+                <h1>Popular PlayList</h1>
+                <div class="card-container">
+                    <div class="card" data-folder = "cs" src="">
+                        <!-- <i class="fa-solid fa-play invert"></i> -->
+                        <div class="card-img">
+
+                            <img src="hotel.jpg" alt="">
+                        </div>
+                        <div class="play-button">
+                            <div class="triangle"></div>
+                        </div>
+
+                        <h4 class="bold">illuminati songs 2024</h4>
+                        <h5>("from Aavesham") </h5>
+                    </div>
+
+                    <div class="card" data-folder = "ncs">
+                        <!-- <i class="fa-solid fa-play invert"></i> -->
+                        <div class="card-img">
+
+                            <img src="hotel.jpg" alt="">
+                        </div>
+                        <div class="play-button">
+                            <div class="triangle"></div>
+                        </div>
+
+                        <h4 class="bold">illuminati songs 2024</h4>
+                        <h5>("from Aavesham") </h5>
+                    </div>
+
+                    <div class="card">
+                        <!-- <i class="fa-solid fa-play invert"></i> -->
+                        <div class="card-img">
+
+                            <img src="hotel.jpg" alt="">
+                        </div>
+                        <div class="play-button">
+                            <div class="triangle"></div>
+                        </div>
+
+                        <h4 class="bold">illuminati songs 2024</h4>
+                        <h5>("from Aavesham") </h5>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="playbar">
+                <div class="playSystem">
+                    <div class="songName b"></div>
+                    <div class="playbutton">
+                        <i class="fa-solid fa-backward-step" id="previous"></i>
+                        <i class="fa-solid fa-play play"></i>
+                        <i class="fa-solid fa-forward-step " id="next"></i>
+                    </div>
+                    <label for="volume"><i class="fa-solid fa-volume-high"></i></label>
+                    <div class="range">
+                        <input type="range" name="volume" id="volume" min="0" max="10">
+                    </div>
+                   
+                    <div class="playtime b center">00:00/00:00</div>
+                </div>
+                <div class="seekbar cursor">
+                    <div class="circle cursor"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="spotify.js"></script>
+</body>
+
+</html>

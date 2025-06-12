@@ -1,0 +1,99 @@
+
+
+.model{
+    width: 850px;
+    text-align: center;
+    display: flex;
+    flex-direction : column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.head{
+    box-sizing: border-box;
+    position : relative;
+    overflow: visible;
+    height: 100px;
+    width: 100px;
+    border: none;
+    border-radius: 50%;
+    background-color: lightsalmon;
+    border: 2px solid white;
+}
+
+.hat{
+    width: 200px;
+    /* margin-bottom: 100px; */
+    position: sticky;
+    top: 0px;
+    margin-bottom:-70px;
+    z-index: 50;
+}
+
+.scarf{
+    display: none;
+    width: 200px;
+    z-index: 99;
+    margin-top:200px;
+    position : absolute;
+    margin-left: 320px;
+}
+
+.sunglass{
+    position : sticky;
+    width: 79px;
+    display: none;
+}
+
+.chest{
+    display: flex;
+}
+
+.chest .chest1{
+    height: 200px;
+    width: 200px;
+    background-color: lightcoral;
+    border: 2px solid white;
+}
+
+.chest .lefthand,.righthand{
+    width: 250px;
+    height: 50px;
+    background-color: lightsalmon;
+    border: 2px solid white;
+}
+
+.leg{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftleg ,.rightleg{
+    background-color: lightsalmon;
+    border: 2px solid white;
+    height: 250px;
+    width: 50px;
+}
+
+@media (max-width: 900px){
+    .scarf{
+        display : block;
+    }
+    .hat{
+        display: none;
+    }
+}
+
+@media (max-width : 500px){
+    .scarf{
+        display: none
+    }
+    .hat{
+        display: none;
+    }
+
+    .sunglass{
+        display: block;
+    }
+}

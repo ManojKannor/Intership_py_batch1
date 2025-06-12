@@ -1,0 +1,16 @@
+*{
+    color : white;
+}
+
+.gradeA {
+    background-color: red;
+}
+
+.gradeB {
+    background-color: yellow;
+}
+
+input[type="text"],input[type="email"]{
+    background-color : yellow;
+    padding : 9px 20px;
+}

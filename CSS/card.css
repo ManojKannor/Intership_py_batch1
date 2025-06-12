@@ -1,0 +1,74 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+    font-family : Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color : #819A91;
+    color : white;
+    padding : 1.4rem 0.4rem;
+    text-align : center;
+}
+
+nav{
+    background-color : #A7C1A8;
+    padding : 1.2rem;
+    position : sticky;
+    top : 0;
+}
+
+nav ul{
+    display : flex;
+    justify-content : flex-start;
+    align-items : center;
+    gap : 1.2rem;
+    list-style : none;
+}
+
+nav ul li a{
+    text-decoration : none;
+    color : white;
+    font-weight : bold;
+}
+
+nav ul li a:hover{
+    color : red;
+}
+
+section{
+    width: 600px;
+}
+
+.card1{
+    margin-top: 1.2rem;
+    display : flex;
+    justify-content : space-between;
+    align-items: center;
+    gap: 5rem;
+    width : 550px;
+}
+
+.descri{
+    display : flex;
+    flex-direction : column;
+    gap : 1.2rem;
+}
+
+.descri .price .p1{
+    font-size: 1.7rem;
+    font-weight : 500;
+    margin-right : 0.8rem;
+}
+
+.price .add{
+    border : none;
+    border-radius : 18px;
+    background-color : rgb(190, 190, 35);
+    color : white;
+    padding : 0.5rem;
+    font-weight : bold;
+    margin-top: 1.4rem;
+}
+

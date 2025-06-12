@@ -1,0 +1,438 @@
+*{
+    Padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+   /* body{
+    width: fit-content;
+}    */
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.buy-section{
+    padding: 0 4rem;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+}
+
+.logo{
+    width: 10.9rem;
+    height: 3.5rem;
+}
+
+/* .login-signup{
+    display: flex;
+} */
+
+.login{
+    background-color: white;
+    color: black;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 5px;
+}
+
+.sign{
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+}
+
+.login:hover{
+    color: #fc8019;
+}
+
+
+/* text section */
+
+.h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 0.5rem;
+}
+
+.h3{
+    font-size: 1.4rem;
+    font-weight: 400;
+    opacity: 0.6;
+}
+
+/* search section */
+
+.search-section{
+    display: flex;
+    margin-top: 2.7rem;
+}
+
+input[type="text"]{
+    padding: 15px 110px;
+    font-size: 1.2rem; 
+}
+
+input[type="text"]:hover{
+    /* border: 2px solid b; */
+    outline-color: #fc8019;
+}
+input[type="text"]:active{
+    /* border: 2px solid black; */
+    outline-color: #fc8019;
+}
+input[type="text"]:visited{
+    /* border: 2px solid black; */
+    outline-color: #fc8019;
+}
+ 
+
+.food-button{ 
+    background-color: #fc8019;
+    color: white;
+    padding: 15px 15px;
+    font-size: 1rem;
+    font-weight: 800;
+    border: none;
+    border-right: none;
+}
+
+h5{
+    opacity: 0.5;
+    margin: 2.7rem 0 1rem;
+}
+
+.site5{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.place ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    list-style: none;
+}
+
+.place ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.dark-f a{
+    color: black;
+}
+
+.light-f a{
+    color: black;
+    opacity: 0.6;
+}
+
+
+/* start to design step-by-step shoping section */
+
+.main{
+    background-color: #482121;
+}
+
+.section-shop{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.step-img{
+    width: 15rem;
+    text-align: center;
+}
+
+.image{
+    width: 105px;
+    height: 100px;
+    margin-bottom: 2rem;
+    margin-top: 7rem;
+}
+
+h3{
+    color: #FFFFFF;
+}
+
+.size-5{
+    color: #E0CBC1;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+/* design grid container of download section */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.grid-text{
+    padding: 10rem 5.5rem 3rem 5.5rem;
+}
+
+.grid-h1{
+    color: #282c3f;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.grid-h3{
+    color: #282c3f;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 1.7rem 0 4rem 0;
+}
+
+.play-store , .apple-store{
+    width: 11rem;
+    height: 3.6rem;
+    margin: 0.6rem;
+}
+
+.image4{
+    width: 24rem;
+    height: 25rem;
+}
+
+.image5{
+    height: 27rem;
+    margin-top: 6rem;
+}
+
+/* flex container to design a link section */
+
+ .container{
+    max-width: 1178px;
+    margin: auto
+} 
+
+.footer{
+    background-color: black;
+    padding: 70px 0;
+}
+
+.row-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+
+/* .col{
+    width: 15%;
+} */
+
+
+.col{
+    margin: 0.6rem;
+}
+
+h4{
+    color: #808080;
+}
+
+.col ul{
+    list-style: none;
+    width: 20rem;
+}
+
+.col ul li{
+    margin-top: 1.5rem;
+}
+
+.col ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.col-image{
+    width: 14rem;
+}
+
+
+.play-store2 , .apple-store2{
+    width: 11rem;
+    height: 3.6rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+}
+
+
+
+
+
+
+
+/* footer 2 design */
+
+hr{
+    margin: 3rem;
+    opacity: 0.5;
+}
+
+
+.footer-2{
+    padding: 0 4rem;
+}
+
+.footer-t{
+    font-size: 0.9rem;
+    color: white;
+}
+
+.footer-text-2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-text-5{
+    color: white;
+}
+
+/* design the footer-3  */
+
+.footer-3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+.foot-swiggy-logo{
+    height: 3rem;
+    width: 10rem;
+}
+
+.swiggy-text{
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.social-logo{
+    display: flex;
+}
+
+/* .fa-brands{
+    background-color: white;
+    color: white;
+} */
+
+.fa-brands{
+    font-size: 2rem;
+    margin: 1rem;
+    color: white;
+}
+
+@media all and (max-width: 1500px){
+    .grid-container{
+        display: grid;
+        grid-template-columns:1fr;
+    }
+}
+
+
+@media all and (max-width: 900px){
+    .header{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .search-section{
+        display: flex;
+        margin-top: 2.7rem;
+    }
+    
+    input[type="text"]{
+        padding: 15px 50px;
+        font-size: 0.9rem; 
+    }
+
+    .poster-section{
+        width: 100%;
+    }
+
+    .col ul li a{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    
+}
+
+@media all and (max-width: 540px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .buy-section{
+        padding: 0 2rem;
+    }
+    
+
+    .search-section{
+        display: flex;
+        margin-top: 2.7rem;
+    }
+    
+    input[type="text"] {
+        padding: 10px 17px;
+        font-size: 0.7rem;
+    }
+
+    .food-button {
+        background-color: #fc8019;
+        color: white;
+        padding: 5px 7px;
+        font-size: 0.5rem;
+        font-weight: 800;
+        border: none;
+        border-right: none;
+    }
+
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

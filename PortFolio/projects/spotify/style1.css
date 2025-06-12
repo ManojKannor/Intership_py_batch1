@@ -1,0 +1,119 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+header{
+    background-color: black;
+    padding: 32px 0 32px 51px;
+}
+
+.logo img{
+   width: 117px;
+   height: 36px;
+}
+
+.container{
+    background-color: rgb(34, 33, 33);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 900px;
+    min-width: 50rem;
+    border-radius: 10px;
+    padding: 2rem 0;
+    align-items: center;
+    gap: 7px;
+}
+
+h1{
+    margin: 3rem 0;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.login-1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 20px;
+    border: 0.2px solid white;
+    border-radius: 45px;
+    width: 20rem;
+    gap: 0px;
+}
+
+p{
+    margin: 0.7rem 2rem;
+    font-weight: 700;
+    text-align: center;
+    width: 16rem;
+}
+
+.g-img img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.login-2{
+    padding: 2px 10px;
+    border: 0.2px solid white;
+    border-radius: 45px;
+    width: 20rem;
+}
+
+.login-2 p{
+    margin-left: 2rem;
+}
+
+/* partial line */
+
+hr{
+    width: 650px;
+    height: 2px;
+    opacity: 0.3;
+    margin: 40px 0;
+}
+
+p{
+    margin: 0.5rem 0;
+    font-size: 0.9rem
+}
+
+input[type="text"]{
+    padding: 0.8rem 3rem;
+    background-color: rgb(34, 33, 33);
+    border-radius: 2px;
+    border:1px solid rgb(143, 137, 137);
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    outline : none;
+}
+
+input[type="number"]{
+    padding: 0.8rem 2rem;
+    background-color: rgb(34, 33, 33);
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    outline : none;
+}
+
+.pass-div{
+    border: 1px solid white;
+    border-radius : 0.2rem;
+    background-color: rgb(34, 33, 33);
+    padding-right: 0.7rem;
+}

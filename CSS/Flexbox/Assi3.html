@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        img{
+            width: 200px;
+        }
+
+        .container{
+            width:100%;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+
+        @media (max-width: 600px){
+            .container{
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            img{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="currency.png" alt="">
+        <img src="foodie.jfif" alt="">
+        <img src="swiggy.jpeg" alt="">
+        <img src="zomato.png" alt="">
+        <img src="spotify.png" alt="">
+        <img src="manoj.png" alt="">
+    </div>
+</body>
+</html>

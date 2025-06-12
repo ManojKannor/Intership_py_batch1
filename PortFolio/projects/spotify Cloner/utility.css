@@ -1,0 +1,118 @@
+/* utility css ka jalwa hai bhai thoda hi likhte par puri website hila dalne ki takat rakhte hai */
+
+.mBlack{
+    background-color: #121212;
+}
+
+.sBlack{
+    background-color: #0e0d0d;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.WH {
+    height: 96vh;
+}
+
+.border{
+    border-radius: 0.5rem;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.iconH{
+    width: 25px;
+}
+
+.a{
+    text-decoration: none;
+    color: gray;
+    font-size: 0.7rem;
+}
+
+.round{
+    border-radius: 360px;
+    background-color: black;
+    padding: 5px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+
+/*  play button animation on card */
+
+
+.img-card{
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.play-button {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transition: all 0.5s ease-in-out;
+   
+  opacity: 0;
+}
+
+.card:hover .play-button {
+    bottom: calc(100% - 150px ); /* Move to top while maintaining a margin from the top */
+  opacity: 1;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 15px solid black;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    right: 0;
+}
+
+
+.songName,.playbutton,.playtime{
+    width:250px;
+}
+
+.b {
+    font-weight: bold;
+}
+
+i,.cursor{
+    cursor: pointer;
+}
+
+.logo{
+    width: 130px;
+}
+
+.center{
+    text-align: center;
+}
+

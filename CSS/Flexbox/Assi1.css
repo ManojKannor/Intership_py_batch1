@@ -1,0 +1,13 @@
+.parent{
+    background-color: lightblue;
+    height: 200px;
+    width: 200px;
+    color: white;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

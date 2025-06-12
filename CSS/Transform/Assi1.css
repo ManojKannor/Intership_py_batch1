@@ -1,0 +1,53 @@
+
+
+.robot{
+    width: 850px;
+    text-align: center;
+    display: flex;
+    flex-direction : column;
+    align-items: center;
+}
+
+.head{
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    border: 2px solid white;
+}
+
+.chest{
+    display: flex;
+}
+
+.chest .chest1{
+    height: 200px;
+    width: 250px;
+    background-color: red;
+    border: 2px solid white;
+}
+
+.chest .lefthand,.righthand{
+    width: 300px;
+    height: 80px;
+    background-color: red;
+    border: 2px solid white;
+}
+
+.leg{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftleg ,.rightleg{
+    background-color: red;
+    border: 2px solid white;
+    height: 300px;
+    width: 80px;
+}
+
+@media (max-width: 800px){
+    .robot{
+        transform: rotate(45deg);
+    }
+}

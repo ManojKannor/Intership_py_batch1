@@ -1,0 +1,419 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap') */
+
+
+*{
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*  material css */
+
+.flex{
+    display: flex;
+    justify-content : space-between;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.no-flex{
+    display: inline-block;
+}
+
+.flex-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.black{
+    color: black;
+}
+
+header{
+    background-color: white;
+    padding : 0.8rem 100px 0 100px;
+}
+
+
+.container-h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.navbar{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 137px;
+    height: 44px;
+}
+
+.search{
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+select,input[type="search"]{
+    border: none;
+    border-radius: 5px;
+    padding: 1rem 0.6rem;
+    box-shadow: 2px;
+    outline: none;
+}
+
+select{
+    width: 234px;
+    font-size: 1.1rem;
+    color: #696969;
+}
+
+.option{
+    padding: 0.4rem 0.6rem;
+    color: #696969;
+    border: 1px solid #696969;
+    border-radius: 10px;
+    margin: 2rem;
+}
+
+.d-line{
+    width: 2px;
+    height: 20px;
+    background-color: rgb(49, 49, 49);
+    border:none;
+    border-radius: 2px;
+    margin: 0 0.5rem;
+}
+
+input[type="search"]{
+    width: 440px;
+    font-size: 1rem;
+}
+
+input[type=search]{
+    border:none;
+}
+
+.s-logo{
+    margin: 0 0.5rem;
+}
+
+.signUp{
+    display: flex;
+    gap: 1.3rem;
+    margin-left :3rem;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+    color: #696969;
+    font-size: 18px;
+}
+
+
+/* Second heading container design  */
+
+.container-h2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2.8rem;
+    padding: 1rem  3.2rem 0 3.2rem;
+}
+.container-h2 img{
+    width : 30px;
+    height: 30px;
+}
+
+.container-h2 .img{
+    background-color: #f8f8f8;
+    border: none;
+    border-radius: 360px;
+    padding: 1rem;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    height: 100px;
+    padding: 0.5rem 1.2rem;
+}
+
+.items p {
+    font-size: 25px;
+    color: #696969;
+}
+
+.item-1 .img{
+    background-color: #e5f3f3;
+}
+.container-h2 .item-1{
+    border-bottom : 2px solid tomato;
+    border-radius: 1px;
+}
+
+.container-h2 .item-1 p{
+    color: tomato;
+}
+
+.container-h2 .items:hover{
+    border-bottom : 2px solid tomato;
+    border-radius: 1px;
+    color: tomato;
+}
+
+.items p:hover{
+   
+}
+
+/* Section : filter and rating design here */
+
+.filter{
+    display: flex;
+    flex-wrap: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0 2.7rem 0;
+}
+
+.filter .item{
+    padding: 0.5rem 0.5rem;
+    border: 1px solid #696969;
+    background-color: transparent;
+    color: #696969;
+    font-size: 0.9rem;
+    font-weight: 100px;
+    border-radius: 6px;
+}
+
+.filter .item:hover{
+    background: tomato;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    transition: all 0.8s;
+    transform : scale(1.2);
+}
+
+.big img{
+    height: 252px;
+    width: 100%;
+}
+
+/* design trending section of restaurant  */
+
+
+.trend{
+    font-size: 2rem;
+    color: black;
+    margin: 0.8rem 0 2rem 0;
+}
+
+.trend-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    gap: 2.8rem;
+}
+.t-item{
+    border: none;
+    width: 333px;
+    height: 351px;
+}
+
+
+.t-item img{
+    width: 328px;
+    height: 248px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 0.4rem;
+}
+.rate{
+    background-color: green;
+    color: white;
+    font-size: 0.6rem;
+    font-weight: bold;
+    padding: 0.3rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.t-h{
+    font-family: sans-serif;
+    font-size: 17px;
+    /* font-weight: bold; */
+    color: #252424;
+}
+
+.t-item .flex .h3,.h4{
+    font-size: 14px;
+    color: #696969;
+}
+
+.t-item .flex{
+    margin-bottom: 0.5rem;
+}
+
+/* Design Localities section  */
+
+.popular-sec .lightblack{
+    color: #353333;
+    font-size: 33px;
+    margin-bottom : 2rem;
+}
+.sub-sec{
+    display : flex;
+    flex-wrap: wrap;
+    justify-content : flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+.p-item{
+    background-color: transparent;
+    color: #696969;
+    padding: 0.7rem 0.5rem 0.8rem 1rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+    width: 350px;
+    /* flex-grow: 1; */
+}
+
+.p-h1{
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    font-weight: 100px;
+    margin-bottom : 0.3rem;
+}
+
+details{
+    width: 100%;
+    color: black;
+    padding: 1.4rem 2rem;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+    margin: 1rem 0;
+}
+
+.lightblack{
+    color: #353333;
+    font-size: 33px;
+    margin: 2rem 0;
+}
+summary{
+    font-size: 1.4rem;
+    color: #464343;
+}
+
+details p{
+    font-size: 1rem;
+    color: #696969;
+    margin-top: 1rem;
+    line-height: 22px;;
+}
+
+/* footer Section  */
+
+footer{
+    background-color: #f8f8f8;
+    padding: 5rem 0 0 0;
+    margin-top: 2.5rem;
+}
+.row{
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.india,.lan{
+    background-color: transparent;
+    color: black;
+    border: 0.7px solid black;
+    border-radius: 6px;
+    padding: 0.4rem 1rem;
+}
+
+.row-f-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.row-f-2 .col p{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+
+ul{
+    list-style: none;
+}
+
+ul a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 100px;
+    color: #696969;
+}
+
+.s-app{
+    margin-bottom : 1.6rem;
+}
+.s-app i{
+    background-color: black;
+    color: white;
+    padding: 0.3rem;
+    border: none;
+    border-radius: 360px;
+}
+
+.col-img img{
+    margin-bottom: 0.7rem;
+}
+
+/*  change the mode toggel button */
+
+.ModeBtn{
+    font-size: 0.8rem;
+    background-color: tomato;
+    color: white;
+    padding: 0.2rem 0.4rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.light{
+    background-color: white;
+    color: black;
+}
+
+.dark{
+    background-color: black;
+    color: white;
+}
