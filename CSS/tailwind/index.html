@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+   <ul role="list">
+  {#each people as person}
+    <!-- Remove top/bottom padding when first/last child -->
+    <li class="flex py-4 first:pt-0 last:pb-0">
+      <img class="h-10 w-10 rounded-full" src={person.imageUrl} alt="" />
+      <div class="ml-3 overflow-hidden">
+        <p class="text-sm font-medium text-gray-900 dark:text-white">{person.name}</p>
+        <p class="truncate text-sm text-gray-500 dark:text-gray-400">{person.email}</p>
+      </div>
+    </li>
+  {/each}
+</ul>
+
+    </h1>
+  </body>
+</html>
